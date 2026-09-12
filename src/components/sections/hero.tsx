@@ -2,7 +2,7 @@ import { ArrowRight, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { profile } from "@/data/portfolio";
 import { hero } from "@/data/site";
-import profileAsset from "@/assets/saiteja-profile-new.png.asset.json";
+import profileImage from "@/assets/saiteja-profile-new.png";
 
 export function HeroSection() {
   return (
@@ -58,7 +58,7 @@ export function HeroSection() {
         <div className="relative mx-auto w-full max-w-sm lg:max-w-none">
           <div className="surface overflow-hidden rounded-2xl">
               <img
-                src={profileAsset.url}
+                src={profileImage}
                 alt="Portrait of Kurapati Sai Teja"
                 className="aspect-[4/5] w-full object-cover"
                 loading="eager"

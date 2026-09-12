@@ -1,17 +1,17 @@
-import ragAsset from "@/assets/rag-ai-chatbot.png.asset.json";
-import zoraAsset from "@/assets/zora-interface.png.asset.json";
-import salesAsset from "@/assets/sales-intelligence.jpg.asset.json";
-import analyticsDataPreprocessingAsset from "@/assets/certificates/analytics-vidhya-data-preprocessing.png.asset.json";
-import analyticsDataVisualizationAsset from "@/assets/certificates/analytics-vidhya-data-visualization.png.asset.json";
-import huggingFaceLlmAsset from "@/assets/certificates/hugging-face-llm-fundamentals.png.asset.json";
-import huggingFaceMcpAsset from "@/assets/certificates/hugging-face-mcp-unit-1.png.asset.json";
-import ibmMachineLearningAsset from "@/assets/certificates/ibm-machine-learning-python.png.asset.json";
-import kaggleIntroMachineLearningAsset from "@/assets/certificates/kaggle-intro-machine-learning.png.asset.json";
-import kagglePandasAsset from "@/assets/certificates/kaggle-pandas.png.asset.json";
-import kagglePythonAsset from "@/assets/certificates/kaggle-python.png.asset.json";
-import nvidiaCodeathonAsset from "@/assets/certificates/nvidia-codeathon-appreciation.png.asset.json";
-import sqlBasicAsset from "@/assets/sql-basic-cert.png.asset.json";
-import tcsCodevitaAsset from "@/assets/certificates/tcs-codevita-season-13.png.asset.json";
+import ragImage from "@/assets/rag-ai-chatbot.png";
+import zoraImage from "@/assets/zora-interface.png";
+import salesImage from "@/assets/sales-intelligence.jpg";
+import analyticsDataPreprocessingImage from "@/assets/certificates/analytics-vidhya-data-preprocessing.png";
+import analyticsDataVisualizationImage from "@/assets/certificates/analytics-vidhya-data-visualization.png";
+import huggingFaceLlmImage from "@/assets/certificates/hugging-face-llm-fundamentals.png";
+import huggingFaceMcpImage from "@/assets/certificates/hugging-face-mcp-unit-1.png";
+import ibmMachineLearningImage from "@/assets/certificates/ibm-machine-learning-python.png";
+import kaggleIntroMachineLearningImage from "@/assets/certificates/kaggle-intro-machine-learning.png";
+import kagglePandasImage from "@/assets/certificates/kaggle-pandas.png";
+import kagglePythonImage from "@/assets/certificates/kaggle-python.png";
+import nvidiaCodeathonImage from "@/assets/certificates/nvidia-codeathon-appreciation.png";
+import sqlBasicImage from "@/assets/sql-basic-cert.png";
+import tcsCodevitaImage from "@/assets/certificates/tcs-codevita-season-13.png";
 import { profile, projects } from "@/data/portfolio";
 
 export const navSections = [
@@ -63,7 +63,7 @@ export const featuredProjects: Featured[] = [
       "A Retrieval-Augmented Generation system that answers questions from uploaded documents using document processing, embeddings, and vector search.",
     technologies: ["Python", "LangChain", "Hugging Face", "FAISS"],
     github: "https://github.com/Saitejare/RAG-Based-Question-Answering-System.git",
-    image: ragAsset.url,
+    image: ragImage,
     details: [
       {
         heading: "Pipeline",
@@ -90,7 +90,7 @@ export const featuredProjects: Featured[] = [
     description:
       "A voice-controlled desktop AI assistant that generates responses and performs common desktop and web activities.",
     technologies: ["Python", "Speech Recognition", "Groq", "Kokoro TTS"],
-    image: zoraAsset.url,
+    image: zoraImage,
     github: "https://github.com/Saitejare/ZORA_AI_ASSISTENT.",
     details: [
       {
@@ -118,7 +118,7 @@ export const featuredProjects: Featured[] = [
     description:
       "A React and Python sales analysis system with prediction, demand and profit models, recommendations, advisor rules, and stock alerts.",
     technologies: ["React", "Python", "Flask", "Pandas", "Scikit-learn"],
-    image: salesAsset.url,
+    image: salesImage,
     github: "https://github.com/Saitejare/advanced_sales",
     details: [
       {
@@ -382,35 +382,35 @@ export const certificationList: Certification[] = [
     issuer: "Tata Consultancy Services (TCS)",
     category: "Competitive Programming",
     description: "Secured Global Rank 3479 in TCS CodeVita Season 13.",
-    image: tcsCodevitaAsset.url,
+    image: tcsCodevitaImage,
   },
   {
     name: "The MCP Course: Unit 1 — Fundamentals of MCP",
     issuer: "Hugging Face",
     category: "Generative AI",
     date: "June 7, 2025",
-    image: huggingFaceMcpAsset.url,
+    image: huggingFaceMcpImage,
   },
   {
     name: "The LLM Course — Fundamentals of LLMs",
     issuer: "Hugging Face",
     category: "Generative AI",
     date: "May 27, 2025",
-    image: huggingFaceLlmAsset.url,
+    image: huggingFaceLlmImage,
   },
   {
     name: "Introduction to Data Visualization",
     issuer: "Analytics Vidhya",
     category: "Data Analysis",
     date: "April 17, 2025",
-    image: analyticsDataVisualizationAsset.url,
+    image: analyticsDataVisualizationImage,
   },
   {
     name: "Data Preprocessing on a Real-World Problem Statement",
     issuer: "Analytics Vidhya",
     category: "Data Analysis",
     date: "April 19, 2025",
-    image: analyticsDataPreprocessingAsset.url,
+    image: analyticsDataPreprocessingImage,
   },
   {
     name: "Machine Learning with Python",
@@ -418,28 +418,28 @@ export const certificationList: Certification[] = [
     category: "AI and Machine Learning",
     date: "April 14, 2025",
     credential: "Course code: ML0101EN",
-    image: ibmMachineLearningAsset.url,
+    image: ibmMachineLearningImage,
   },
   {
     name: "Pandas",
     issuer: "Kaggle",
     category: "Data Analysis",
     date: "February 14, 2025",
-    image: kagglePandasAsset.url,
+    image: kagglePandasImage,
   },
   {
     name: "Intro to Machine Learning",
     issuer: "Kaggle",
     category: "AI and Machine Learning",
     date: "December 25, 2024",
-    image: kaggleIntroMachineLearningAsset.url,
+    image: kaggleIntroMachineLearningImage,
   },
   {
     name: "Python",
     issuer: "Kaggle",
     category: "Programming",
     date: "February 14, 2025",
-    image: kagglePythonAsset.url,
+    image: kagglePythonImage,
   },
   {
     name: "Certificate for Appreciation — NVIDIA 10-Day GPU Accelerated Computing Codeathon",
@@ -448,7 +448,7 @@ export const certificationList: Certification[] = [
     date: "October 19–28, 2024",
     description:
       "Secured 4th rank among the top performers in the 10-Day GPU Accelerated Computing and Codeathon (Back to Future: Skills in Accelerated Computing and Code Challenge).",
-    image: nvidiaCodeathonAsset.url,
+    image: nvidiaCodeathonImage,
   },
   {
     name: "SQL (Basic)",
@@ -456,7 +456,7 @@ export const certificationList: Certification[] = [
     category: "Programming",
     date: "November 4, 2025",
     credential: "Certificate ID: E25F6B800F72",
-    image: sqlBasicAsset.url,
+    image: sqlBasicImage,
   },
 ];
 

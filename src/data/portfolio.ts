@@ -1,10 +1,10 @@
-import zoraAsset from "@/assets/zora-interface.png.asset.json";
+import zoraImage from "@/assets/zora-interface.png";
 import bostonImage from "@/assets/boston-house-ml.jpg";
-import tradingAsset from "@/assets/trading-bot.jpg.asset.json";
-import libraryAsset from "@/assets/library-system.jpg.asset.json";
-import cropAsset from "@/assets/crop-ai.jpg.asset.json";
-import medicalAsset from "@/assets/medical-ml.jpg.asset.json";
-import salesAsset from "@/assets/sales-intelligence.jpg.asset.json";
+import tradingImage from "@/assets/trading-bot.jpg";
+import libraryImage from "@/assets/library-system.jpg";
+import cropImage from "@/assets/crop-ai.jpg";
+import medicalImage from "@/assets/medical-ml.jpg";
+import salesImage from "@/assets/sales-intelligence.jpg";
 
 export const profile = {
   name: "Kurapati Sai Teja Reddy", initials: "KS",
@@ -37,7 +37,7 @@ export const projects: Project[] = [
   {
     slug: "zora-ai-assistant", title: "Zora AI Assistant", shortTitle: "Zora", category: "AI",
     summary: "A Windows voice assistant that connects speech, AI planning, desktop automation, browser actions, memory, and spoken responses.",
-    image: zoraAsset.url, technologies: ["Python", "FastAPI", "LangGraph", "Groq", "React", "Electron"],
+    image: zoraImage, technologies: ["Python", "FastAPI", "LangGraph", "Groq", "React", "Electron"],
     github: "https://github.com/Saitejare/ZORA_AI_ASSISTENT.", demo: "",
     problem: "Move beyond text-only AI by creating a voice-first assistant that can understand requests and safely carry out supported computer actions.",
     overview: "Zora combines a Python AI backend with a React and Electron desktop interface. Its pipeline covers microphone input, transcription, command planning, validated execution, memory, and text-to-speech.",
@@ -67,7 +67,7 @@ export const projects: Project[] = [
   {
     slug: "trading-bot", title: "Binance Futures Trading Bot", shortTitle: "Trading Bot", category: "Backend",
     summary: "A Python command-line trading workflow for Binance Futures Testnet with guided order entry, validation, SQLite records, and activity logs.",
-    image: tradingAsset.url, technologies: ["Python", "Binance API", "SQLite", "CLI"],
+    image: tradingImage, technologies: ["Python", "Binance API", "SQLite", "CLI"],
     github: "https://github.com/Saitejare/Trading-Bot", demo: "",
     problem: "Provide a structured way to practise futures order execution without placing real-capital trades.",
     overview: "A conversational command-line application that targets Binance's USDT-M testnet and records operations in both SQLite and a log file.",
@@ -82,7 +82,7 @@ export const projects: Project[] = [
   {
     slug: "library-management-system", title: "Library Management System API", shortTitle: "Library API", category: "Backend",
     summary: "A role-aware Node.js API for books, members, borrowing, returns, fines, search, and secure authentication.",
-    image: libraryAsset.url, technologies: ["Node.js", "Express", "MongoDB", "JWT", "Joi"],
+    image: libraryImage, technologies: ["Node.js", "Express", "MongoDB", "JWT", "Joi"],
     github: "https://github.com/Saitejare/library-management-system", demo: "",
     problem: "Organize library inventory and lending operations while keeping member and librarian permissions distinct.",
     overview: "The backend exposes authenticated APIs for books, profiles, members, borrowing, returns, and history, with reusable validation and security middleware.",
@@ -97,7 +97,7 @@ export const projects: Project[] = [
   {
     slug: "crop-disease-prediction", title: "Crop Disease Prediction", shortTitle: "Crop Disease", category: "Machine Learning",
     summary: "A Jupyter-based machine-learning workflow for crop disease prediction, from data preparation through model evaluation and visualization.",
-    image: cropAsset.url, technologies: ["Python", "Jupyter", "Pandas", "Scikit-learn", "Matplotlib"],
+    image: cropImage, technologies: ["Python", "Jupyter", "Pandas", "Scikit-learn", "Matplotlib"],
     github: "https://github.com/Saitejare/Crop_disease_prediction", demo: "",
     problem: "Explore how prepared agricultural data can support a machine-learning disease prediction workflow.",
     overview: "The notebook covers data loading, preprocessing, exploratory analysis, model training, evaluation, prediction, and result visualization.",
@@ -112,7 +112,7 @@ export const projects: Project[] = [
   {
     slug: "breast-cancer-prediction", title: "Breast Cancer Prediction", shortTitle: "Cancer Prediction", category: "Machine Learning",
     summary: "A machine-learning notebook for exploring, preparing, modeling, and evaluating breast cancer detection data.",
-    image: medicalAsset.url, technologies: ["Python", "Jupyter", "Pandas", "Scikit-learn", "Seaborn"],
+    image: medicalImage, technologies: ["Python", "Jupyter", "Pandas", "Scikit-learn", "Seaborn"],
     github: "https://github.com/Saitejare/Brest_cancer_prediction", demo: "",
     problem: "Study predictive modeling methods for breast cancer detection through a transparent, reproducible notebook workflow.",
     overview: "The repository focuses on exploratory analysis, preprocessing, model training, comparison, evaluation, and visualization for educational use.",
@@ -127,7 +127,7 @@ export const projects: Project[] = [
   {
     slug: "advanced-sales-intelligence", title: "Advanced Sales Intelligence", shortTitle: "Sales Intelligence", category: "Full Stack",
     summary: "A React and Python sales analysis system with prediction, demand and profit models, recommendations, advisor rules, and stock alerts.",
-    image: salesAsset.url, technologies: ["React", "Python", "Flask", "Pandas", "Scikit-learn"],
+    image: salesImage, technologies: ["React", "Python", "Flask", "Pandas", "Scikit-learn"],
     github: "https://github.com/Saitejare/advanced_sales", demo: "",
     problem: "Turn sales records and predictive models into practical views for analysis, forecasting, recommendations, and inventory attention.",
     overview: "The repository combines a React interface with a Python backend, trained sales, demand, and profit models, engineered data, and rule-based advice.",
