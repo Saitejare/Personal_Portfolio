@@ -57,12 +57,12 @@ export function HeroSection() {
 
         <div className="relative mx-auto w-full max-w-sm lg:max-w-none">
           <div className="surface overflow-hidden rounded-2xl">
-              <img
-                src={profileImage}
-                alt="Portrait of Kurapati Sai Teja"
-                className="aspect-[4/5] w-full object-cover"
-                loading="eager"
-              />
+            <img
+              src={profileImage}
+              alt="Portrait of Kurapati Sai Teja"
+              className="aspect-[4/5] w-full object-cover"
+              loading="eager"
+            />
           </div>
           <div className="surface absolute -bottom-5 left-5 rounded-xl px-4 py-3 backdrop-blur-md">
             <p className="text-sm font-semibold text-primary">AI + SAP</p>
@@ -73,7 +73,15 @@ export function HeroSection() {
   );
 }
 
-function Social({ href, label, children }: { href: string; label: string; children: React.ReactNode }) {
+function Social({
+  href,
+  label,
+  children,
+}: {
+  href: string;
+  label: string;
+  children: React.ReactNode;
+}) {
   return (
     <a
       href={href}

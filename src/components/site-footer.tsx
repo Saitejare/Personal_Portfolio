@@ -35,7 +35,10 @@ export function SiteFooter() {
           <ul className="mt-4 grid grid-cols-2 gap-y-2 text-sm">
             {navSections.map(({ id, label }) => (
               <li key={id}>
-                <a href={`#${id}`} className="text-muted-foreground transition-colors hover:text-foreground">
+                <a
+                  href={`#${id}`}
+                  className="text-muted-foreground transition-colors hover:text-foreground"
+                >
                   {label}
                 </a>
               </li>
@@ -45,14 +48,24 @@ export function SiteFooter() {
       </div>
 
       <div className="section-shell flex flex-col gap-2 border-t border-border py-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-        <p>© {new Date().getFullYear()} {profile.name}. All rights reserved.</p>
+        <p>
+          © {new Date().getFullYear()} {profile.name}. All rights reserved.
+        </p>
         <p className="font-mono">Built with React, TanStack Start and Tailwind CSS.</p>
       </div>
     </footer>
   );
 }
 
-function IconLink({ href, label, children }: { href: string; label: string; children: React.ReactNode }) {
+function IconLink({
+  href,
+  label,
+  children,
+}: {
+  href: string;
+  label: string;
+  children: React.ReactNode;
+}) {
   return (
     <a
       href={href}

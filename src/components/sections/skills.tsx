@@ -38,7 +38,9 @@ export function SkillsSection() {
                   </li>
                 ))}
               </ul>
-              {group.note && <p className="mt-4 text-xs leading-5 text-muted-foreground">{group.note}</p>}
+              {group.note && (
+                <p className="mt-4 text-xs leading-5 text-muted-foreground">{group.note}</p>
+              )}
             </article>
           ))}
         </div>

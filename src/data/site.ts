@@ -443,7 +443,8 @@ export const certificationList: Certification[] = [
   },
   {
     name: "Certificate for Appreciation — NVIDIA 10-Day GPU Accelerated Computing Codeathon",
-    issuer: "KPR Institute of Engineering and Technology · Department of Artificial Intelligence and Data Science",
+    issuer:
+      "KPR Institute of Engineering and Technology · Department of Artificial Intelligence and Data Science",
     category: "Cloud and Computing",
     date: "October 19–28, 2024",
     description:
