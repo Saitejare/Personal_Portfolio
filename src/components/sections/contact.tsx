@@ -13,7 +13,11 @@ export function ContactSection() {
             <Row href={`mailto:${contact.email}`} label="Email" value={contact.email}>
               <Mail />
             </Row>
-            <Row href={`tel:${contact.phone.replace(/\s/g, "")}`} label="Phone" value={contact.phone}>
+            <Row
+              href={`tel:${contact.phone.replace(/\s/g, "")}`}
+              label="Phone"
+              value={contact.phone}
+            >
               <Phone />
             </Row>
             <Row href={contact.github} label="GitHub" value="github.com/Saitejare">
@@ -54,7 +58,9 @@ function Row({
         {children}
       </span>
       <span className="min-w-0">
-        <span className="block font-mono text-[10px] uppercase tracking-widest text-muted-foreground">{label}</span>
+        <span className="block font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+          {label}
+        </span>
         <span className="block truncate text-sm font-medium">{value}</span>
       </span>
     </a>

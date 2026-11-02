@@ -57,11 +57,15 @@ export function JourneySection() {
                       />
                     </button>
 
-                    <h3 className="mt-3 font-display text-sm font-semibold leading-snug">{stage.title}</h3>
+                    <h3 className="mt-3 font-display text-sm font-semibold leading-snug">
+                      {stage.title}
+                    </h3>
 
                     {open && (
                       <div className="mt-3 space-y-3">
-                        <p className="text-xs leading-6 text-muted-foreground">{stage.description}</p>
+                        <p className="text-xs leading-6 text-muted-foreground">
+                          {stage.description}
+                        </p>
                         <ul className="flex flex-wrap gap-1.5">
                           {stage.technologies.map((tech) => (
                             <li
@@ -74,7 +78,8 @@ export function JourneySection() {
                         </ul>
                         {stage.featuredProject && (
                           <p className="text-xs text-muted-foreground">
-                            <span className="text-primary">Featured project:</span> {stage.featuredProject}
+                            <span className="text-primary">Featured project:</span>{" "}
+                            {stage.featuredProject}
                           </p>
                         )}
                         {stage.interests && (
@@ -103,7 +108,10 @@ export function JourneySection() {
                     )}
                   </div>
                   {index < journeyStages.length - 1 && (
-                    <ArrowRight aria-hidden className="hidden size-4 shrink-0 self-center text-primary/60 sm:block" />
+                    <ArrowRight
+                      aria-hidden
+                      className="hidden size-4 shrink-0 self-center text-primary/60 sm:block"
+                    />
                   )}
                 </div>
               </li>

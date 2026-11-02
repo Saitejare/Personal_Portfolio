@@ -19,7 +19,10 @@ export function AboutSection() {
             <p className="eyebrow">Profile</p>
             <dl className="mt-5 divide-y divide-border">
               {about.card.map(([label, value]) => (
-                <div key={label} className="grid grid-cols-[minmax(0,auto)_minmax(0,1fr)] gap-4 py-3">
+                <div
+                  key={label}
+                  className="grid grid-cols-[minmax(0,auto)_minmax(0,1fr)] gap-4 py-3"
+                >
                   <dt className="text-xs uppercase tracking-wide text-muted-foreground">{label}</dt>
                   <dd className="text-right text-sm font-medium">{value}</dd>
                 </div>

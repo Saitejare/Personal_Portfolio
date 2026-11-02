@@ -20,7 +20,10 @@ export function ProjectsSection() {
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {featuredProjects.map((project) => (
-            <article key={project.title} className="surface card-lift group flex flex-col overflow-hidden rounded-2xl">
+            <article
+              key={project.title}
+              className="surface card-lift group flex flex-col overflow-hidden rounded-2xl"
+            >
               <div className="overflow-hidden border-b border-border">
                 <img
                   src={project.image}
@@ -31,7 +34,9 @@ export function ProjectsSection() {
               </div>
               <div className="flex flex-1 flex-col p-6">
                 <h3 className="font-display text-lg font-semibold leading-snug">{project.title}</h3>
-                <p className="mt-3 flex-1 text-sm leading-6 text-muted-foreground">{project.description}</p>
+                <p className="mt-3 flex-1 text-sm leading-6 text-muted-foreground">
+                  {project.description}
+                </p>
                 <ul className="mt-5 flex flex-wrap gap-1.5">
                   {project.technologies.map((tech) => (
                     <li

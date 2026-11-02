@@ -3,6 +3,7 @@
 ## What will change
 
 ### Verified project portfolio
+
 - Replace the current project collection with only these seven repositories shown in the uploaded references:
   1. ZORA_AI_ASSISTENT.
   2. Boston_house_price_prediction
@@ -17,6 +18,7 @@
 - Present all seven projects on the projects page; keep the strongest projects highlighted on the home page.
 
 ### My Engineering Journey
+
 - Rebuild the Experience page as a six-stage personal engineering story:
   - Programming foundation
   - Artificial Intelligence and Machine Learning
@@ -32,11 +34,13 @@
 - Add the six-step future roadmap and final links to Projects and Blog.
 
 ### Supporting updates
+
 - Update the compact journey preview on the home page to match the new career direction.
 - Preserve the existing dark/light design, typography, accessible controls, project filtering, article links, and mobile navigation.
 - Ensure every project and journey link leads to an existing page or verified external URL.
 
 ## Technical details
+
 - Extend the centralized portfolio data with richer project and journey fields.
 - Add a focused interactive journey component using the existing accordion/button system.
 - Reuse existing generated project artwork where appropriate and create cohesive visual covers for projects that need one.
